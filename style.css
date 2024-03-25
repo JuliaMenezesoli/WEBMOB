@@ -7,7 +7,7 @@ body {
     align-self: auto;
 
 
-    background-image: url(fotofundo.jpeg);
+    background-image: url(imagens/fotofundo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -15,6 +15,7 @@ body {
      
   }
 
+  
 
 
   header {
@@ -184,9 +185,11 @@ body {
     margin-left: 24%;
 
 
+}
 
+.imagem3 {
 
-
+  margin-left: 10%;
 }
   
 
