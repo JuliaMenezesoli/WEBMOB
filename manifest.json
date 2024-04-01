@@ -1,6 +1,8 @@
 { 
     "short_name": "VIBRATOUR",
     "name": "aplicativo para conhecer os pontos turisticos da sua cidade",
+    "start_url":"/index.html",
+    "display":"standalone",
     "icons" : [
         {
             "src":"icon/android/mipmap-hdpi/ic_launcher.png",
@@ -36,5 +38,7 @@
 
         }
 
-    ] 
+    ],
+    "prefer_related_applications": false,
+  "related_applications": [] 
 }
