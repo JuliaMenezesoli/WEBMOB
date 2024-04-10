@@ -1,5 +1,6 @@
 { 
     "short_name": "VIBRATOUR",
+    "theme_color": "#77b9d3",
     "name": "aplicativo para conhecer os pontos turisticos da sua cidade",
     "start_url":"/index.html",
     "display":"standalone",
@@ -34,7 +35,8 @@
         { 
             "src":"icon/android/mipmap-xxxhdpi/ic_launcher.png",
             "sizes":"192x192",
-            "type": "image/png"
+            "type": "image/png", 
+            "purpose": "maskable"
 
         }
 
