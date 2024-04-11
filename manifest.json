@@ -336,6 +336,7 @@
                 "src": "icons/android/android-launchericon-192-192.png",
                 "sizes": "192x192",
                 "purpose": "any"
+                "type": "image/png"  
               },
               {
                 "src": "icons/android/android-launchericon-144-144.png",
@@ -428,6 +429,7 @@
               {
                 "src": "icons/ios/144.png",
                 "sizes": "144x144"
+                  
               },
               {
                 "src": "icons/ios/152.png",
@@ -444,7 +446,9 @@
               {
                 "src": "icons/ios/192.png",
                 "sizes": "192x192",
-                "purpose":"maskable"
+                "type": "imagem/png",
+                "purpose":" any maskable"
+                 
               },
               {
                 "src": "icons/ios/256.png",
