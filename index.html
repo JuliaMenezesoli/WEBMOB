@@ -11,17 +11,14 @@
 
 
   <script>
-        
-    navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
-    
-    if (navigator.vibrate) {
-      
-        document.body.addEventListener('click', function(ev){
-            console.log('body clicked. Time to shake.');
-            navigator.vibrate([500, 300, 100]);
-        });
-    }
-</script>
+    window.onload = function() {
+      navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
+
+      if (navigator.vibrate) {
+        navigator.vibrate([500, 300, 100]); 
+      }
+    };
+  </script>
 
 </head>
 <body>
