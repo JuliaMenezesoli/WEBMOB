@@ -19,14 +19,14 @@
     }
 
     function showPosition(position) {
-      alert("Latitude: " + position.coords.latitude + 
-      "\nLongitude: " + position.coords.longitude);
+      var latitude = position.coords.latitude;
+      var longitude = position.coords.longitude;
+      
+      getCityName(latitude, longitude);
 
       if (navigator.vibrate) {
         navigator.vibrate([500, 300, 100]); 
       }
-
-      getCityName(position.coords.latitude, position.coords.longitude);
     }
 
     function getCityName(latitude, longitude) {
@@ -95,9 +95,9 @@
 </div>
 
 <div id="cityName">Nome da cidade:</div>
-<button onclick="getLocationAndCity()">Obter Nome da Cidade</button>
 
 </body>
 </html>
+
 
 
