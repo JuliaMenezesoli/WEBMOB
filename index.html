@@ -9,6 +9,20 @@
  <meta name="description" content="Aplicativo para turismo no recife.">
   <meta name="theme_color" content="#77b9d3">
 
+
+  <script>
+        
+    navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
+    
+    if (navigator.vibrate) {
+      
+        document.body.addEventListener('click', function(ev){
+            console.log('body clicked. Time to shake.');
+            navigator.vibrate([500, 300, 100]);
+        });
+    }
+</script>
+
 </head>
 <body>
 
