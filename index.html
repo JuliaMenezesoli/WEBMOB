@@ -11,13 +11,23 @@
 
 
   <script>
-    window.onload = function() {
-      navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        alert("Geolocalização não é suportada pelo seu navegador.");
+      }
+    }
 
+    function showPosition(position) {
+      alert("Latitude: " + position.coords.latitude + 
+      "\nLongitude: " + position.coords.longitude);
+
+      
       if (navigator.vibrate) {
         navigator.vibrate([500, 300, 100]); 
       }
-    };
+    }
   </script>
 
 </head>
