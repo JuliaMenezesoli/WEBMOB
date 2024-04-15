@@ -16,37 +16,7 @@
       } else {
         alert("Geolocalização não é suportada pelo seu navegador.");
       }
-    }
-
-    function showPosition(position) {
-      var latitude = position.coords.latitude;
-      var longitude = position.coords.longitude;
-      
-      getCityName(latitude, longitude);
-
-      if (navigator.vibrate) {
-        navigator.vibrate([500, 300, 100]); 
-      }
-    }
-
-    function getCityName(latitude, longitude) {
-      fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`)
-        .then(response => response.json())
-        .then(data => {
-          var city = data.address.city;
-          if (!city) {
-            city = data.address.town;
-          }
-          if (!city) {
-            city = data.address.village;
-          }
-          if (!city) {
-            city = data.address.hamlet;
-          }
-          document.getElementById('cityName').innerText = "Nome da cidade: " + city;
-        })
-        .catch(error => console.error('Erro ao obter os dados:', error));
-    }
+   
   </script>
 
 </head>
